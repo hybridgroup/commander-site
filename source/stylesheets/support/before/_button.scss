@@ -1,0 +1,16 @@
+@mixin button($color, $background) {
+  padding: em(8) em(17);
+  display: inline-block;
+  margin: em(17) 0 0 0;
+  font-size: em(19);
+  font-weight: bold;
+
+  &, &:visited, &:active {
+    background: $background;
+    color: white;
+  }
+
+  &:hover, &:focus {
+    background: ($background -30);
+  }
+}
