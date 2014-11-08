@@ -1,0 +1,16 @@
+.hero {
+  background: url(../images/hero-bg.png) no-repeat 80% top;
+  min-height: 407px;
+  margin-bottom: 60px;
+
+  .hero-text {
+    @include span-columns(5 of 12);
+
+    h1 {
+      margin-top: em(30);
+      color: $color-light-green;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}

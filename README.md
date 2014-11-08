@@ -1,6 +1,6 @@
 ## Commander Website
 
-This is the code for the website for Cylon (http://commander.io) an app to control robots from your mobile device.
+This is the code for the website for Commander (http://commander.io) an app to control robots from your mobile device.
 
 This site is build using [Middleman](http://middlemanapp.com/basics/getting-started/)  
 
