@@ -1,0 +1,8 @@
+.home-about {
+  @include span-columns(5 of 12);
+}
+
+.home-features {
+  @include span-columns(5 of 12);
+  @include shift(2);
+}

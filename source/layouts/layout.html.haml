@@ -3,7 +3,7 @@
     = partial "/layouts/partials/head"
   %body
     = partial "/layouts/layout-contents"
-    .app-header{:role => "banner", :id => "top"}
+    %header.app-header{ :role => "banner", :id => "top" }
       .container
         = yield_content :logo
 
@@ -13,7 +13,7 @@
     .app-content
       = yield
 
-    .app-footer
+    %footer.app-footer
       = partial "/layouts/partials/footer"
 
 

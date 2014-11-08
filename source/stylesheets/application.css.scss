@@ -8,11 +8,19 @@
 $grid-columns                          : 12;
 $max-width                             : 966px;
 
+// Devices
+// --------------------------------------------------
+$design-edge                          : new-breakpoint(max-width 966px 4);
+$tablet                               : new-breakpoint(max-width 768px 4);
+$mobile-large                         : new-breakpoint(max-width 640px 4);
+$mobile                               : new-breakpoint(max-width 480px 4);
+$mobile-small                         : new-breakpoint(max-width 320px 4);
+
 // Color Palette
 // --------------------------------------------------
 $color-white                          : #fafaf1;
 $color-off-white                      : #fffbda;
-$color-lighter-grey                   : #eeeaec;
+$color-lighter-grey                   : #fcfff5;
 $color-light-grey                     : #e8e8e8;
 $color-medium-grey                    : #504338;
 $color-medium-light-grey              : #CECECE;
@@ -25,6 +33,9 @@ $color-dark-purple                    : #523d47;
 $color-magenta                        : #580a25;
 $color-green                          : #bbdd9e;
 $color-navy                           : #193441;
+$color-dark-blue                      : #3e606f;
+$color-light-green                    : #d1dbbd;
+$color-dark-green                     : #bfcda3;
 
 // Panels
 // --------------------------------------------------
@@ -50,11 +61,9 @@ $color-button-footer                  : #cc3500;
 
 // Includes
 // --------------------------------------------------
-/*
-@import "vendor/coderay";
+
 @import "support/before/*";
-@import "support/*";
+//@import "support/*";
 @import "views/shared/*";
 @import "objects/*";
 @import "views/*"; 
-*/

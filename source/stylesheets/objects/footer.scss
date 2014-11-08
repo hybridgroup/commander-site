@@ -1,0 +1,27 @@
+.app-footer {
+  .screenshots {
+    background: $color-light-green;
+    overflow: hidden;
+    padding-bottom: em(38);
+
+    h2 {
+      color: $color-navy;
+    }
+
+    .placeholder {
+      background: $color-dark-green;
+      @include span-columns(3 of 12);
+    }
+  }
+
+  .footer-links {
+    background: $color-dark-blue;
+    overflow: hidden;
+  }
+
+  .footer-base {
+    background: $color-navy;
+    min-height: em(114);
+    overflow: hidden;
+  }
+}
