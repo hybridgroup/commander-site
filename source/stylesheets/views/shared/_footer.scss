@@ -9,4 +9,39 @@ footer {
   .placeholder {
     height: em(134);
   }
+
+  .icon-mail {
+    display: inline-block;
+    width: em(23);
+    height: em(19);
+    background: url(../images/icon-mail.png) no-repeat top left;
+    float: left;
+    margin-right: em(5);
+  }
+
+  .icon-map {
+    display: inline-block;
+    width: em(23);
+    height: em(21);
+    background: url(../images/icon-map.png) no-repeat top center;
+    float: left;
+    margin-right: em(5);
+  }
+
+  .social a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-facebook {
+    background: url(../images/icon-facebook.png) no-repeat top center;
+  }
+
+  .icon-twitter {
+    background: url(../images/icon-twitter.png) no-repeat top center;
+  }
+
+  .icon-github {
+    background: url(../images/icon-github.png) no-repeat top center;
+  }
 }

@@ -18,10 +18,9 @@
     background: $color-dark-blue;
     overflow: hidden;
     color: #fff;
-    min-height: em(252);
     
     .container {
-      margin-top: em(67);
+      margin: em(67) auto;
       font-size: em(12);
     }
 
@@ -40,10 +39,26 @@
 
     .contact {
       @include span-columns(3 of 12);
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     .network {
       @include span-columns(3 of 12);
+
+      .social  {
+        text-align: center;
+
+        a {
+          display: inline-block;
+        }
+      }
     }
 
 

@@ -22,9 +22,16 @@
 
     .contact
       %p.title CONTACT
+      %p
+        %span.icon-mail
+        %a{:href => "mailto:admin@commander.io"} admin@commander.io
+      %p
+        %span.icon-map
+        %a{:href => "#"} Google Map
 
     .network
       %p.title NETWORK
+      = yield_content :social_links
 
 .footer-base
   %img{:src => "/images/footer-logo.png", :alt => ""}/
