@@ -1,8 +1,23 @@
-.home-about {
-  @include span-columns(5 of 12);
-}
+.home {
+  h2 {
+    color: $color-navy;
+    font-family: $font-secondary;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 
-.home-features {
-  @include span-columns(5 of 12);
-  @include shift(2);
+  .subtitle {
+    font-weight: 700;
+    color: $color-dark-blue;
+    font-family: $font-secondary;
+  }
+
+  .home-about {
+    @include span-columns(5 of 12);
+  }
+
+  .home-features {
+    @include span-columns(5 of 12);
+    @include shift(2);
+  }
 }
