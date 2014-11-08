@@ -17,11 +17,17 @@
   .footer-links {
     background: $color-dark-blue;
     overflow: hidden;
+    color: #fff;
   }
 
   .footer-base {
     background: $color-navy;
     min-height: em(114);
+    text-align: center;
     overflow: hidden;
+
+    img {
+      margin-top: em(29);
+    }
   }
 }
