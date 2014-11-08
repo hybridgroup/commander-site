@@ -18,6 +18,29 @@
     background: $color-dark-blue;
     overflow: hidden;
     color: #fff;
+    min-height: em(252);
+    
+    .container {
+      margin-top: em(67);
+    }
+
+    .blog {
+      @include span-columns(4 of 12);
+    }
+
+    .twitter {
+      @include span-columns(3 of 12);
+    }
+
+    .contact {
+      @include span-columns(3 of 12);
+    }
+
+    .network {
+      @include span-columns(2 of 12);
+    }
+
+
   }
 
   .footer-base {
