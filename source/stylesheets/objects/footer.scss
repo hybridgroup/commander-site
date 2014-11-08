@@ -31,7 +31,7 @@
     }
 
     .blog {
-      @include span-columns(4 of 12);
+      @include span-columns(3 of 12);
     }
 
     .twitter {
@@ -43,7 +43,7 @@
     }
 
     .network {
-      @include span-columns(2 of 12);
+      @include span-columns(3 of 12);
     }
 
 
