@@ -17,7 +17,42 @@
   }
 
   .home-features {
-    @include span-columns(5 of 12);
-    @include shift(2);
+    @include span-columns(6 of 12);
+    @include shift(1);
+
+    .icon-feature {
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+      float: left;
+      margin-right: em(20);
+    }
+  }
+
+  .feature {
+    margin-bottom: em(20);
+    overflow: hidden;
+
+    h4 {
+      color: $color-dark-blue;
+      font-weight: 400;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: em(14);
+    }
+  }
+
+  .feature-01 {
+    background: url(../images/feature-01.png) no-repeat top center;
+  }
+
+  .feature-02 {
+    background: url(../images/feature-02.png) no-repeat top center;
+  }
+
+  .feature-03 {
+    background: url(../images/feature-03.png) no-repeat top center;
   }
 }
