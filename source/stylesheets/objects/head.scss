@@ -1,0 +1,15 @@
+.app-header {
+  background: $color-navy;
+
+  .logo {
+    margin-top: 22px;
+    display: inline-block;
+    background: url(../images/logo.png) no-repeat top left;
+    width: em(245);
+    height: em(39);
+
+    span {
+      display: none;
+    }
+  }
+}

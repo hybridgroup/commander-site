@@ -1,0 +1,37 @@
+.screenshots
+  .container
+    %h2 SCREENSHOTS
+
+    .placeholder
+    .placeholder
+    .placeholder
+    .placeholder
+
+
+.footer-links
+  .container
+    .blog
+      %p.title BLOG
+      %p
+        Ruby Central, Inc. (AKA the organization who brings you RubyConf) has a new site design! Check it out: http://rubycentral.org  Thx, @elabs!
+
+    .twitter
+      %p.title TWITTER
+      %p
+        Ruby Central, Inc. (AKA the organization who brings you RubyConf) has a new site design! Check it out: http://rubycentral.org  Thx, @elabs!
+
+    .contact
+      %p.title CONTACT
+      %p
+        %span.icon-mail
+        %a{:href => "mailto:admin@commander.io"} admin@commander.io
+      %p
+        %span.icon-map
+        %a{:href => "#"} Google Map
+
+    .network
+      %p.title NETWORK
+      = yield_content :social_links
+
+.footer-base
+  %img{:src => "/images/footer-logo.png", :alt => ""}/

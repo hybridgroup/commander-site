@@ -1,0 +1,11 @@
+- unless current_page.data.hero.nil?
+  .hero
+    .container
+      .hero-text
+        %h1
+          = current_page.data.hero_title
+        %a{:href => "#", :class => "store-button"}
+          %img{:src => "/images/app-store.png", :alt => ""}/
+
+        %a{:href => "#", :class => "store-button"}
+          %img{:src => "/images/google-play.png", :alt => ""}/
