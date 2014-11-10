@@ -1,16 +1,26 @@
 .hero {
-  background: url(../images/hero-bg.png) no-repeat 80% top;
+  background: url(../images/hero-bg.png) no-repeat 83% top;
   min-height: 407px;
   margin-bottom: 60px;
 
   .hero-text {
-    @include span-columns(5 of 12);
+    @include span-columns(6 of 12);
 
     h1 {
       margin-top: em(30);
       color: $color-light-green;
       text-transform: uppercase;
       font-weight: 400;
+      font-size: 2.5em;
+    }
+
+    .store-button {
+      margin-right: 15px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }

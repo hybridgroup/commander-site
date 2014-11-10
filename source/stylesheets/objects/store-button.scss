@@ -1,0 +1,23 @@
+.store-button {
+  -moz-box-shadow: 0px 4px 0px 0px #092437;
+  -webkit-box-shadow: 0px 4px 0px 0px #092437;
+  box-shadow: 0px 4px 0px 0px #092437;
+  background-color:#3e606f;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  display: inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  padding:6px 12px;
+  text-decoration:none;
+  overflow: hidden;
+
+  &:active {
+    position:relative;
+    top:1px;
+    -moz-box-shadow: 0px 0px 0px 0px #092437;
+    -webkit-box-shadow: 0px 0px 0px 0px #092437;
+    box-shadow: 0px 0px 0px 0px #092437;
+  }
+}
