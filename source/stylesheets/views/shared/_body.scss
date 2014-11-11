@@ -41,10 +41,7 @@ body {
   margin: 0 auto;
   position: relative;
   padding: 0 em(15);
-  width: 966px;
-  /*
   @include media($tablet) {
     width: 100%;
   }
-  */
 }

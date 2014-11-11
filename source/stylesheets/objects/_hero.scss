@@ -1,18 +1,22 @@
 .hero {
-  background: url(../images/hero-bg.png) no-repeat 86% top;
+  background: url(../images/hero-bg.png) no-repeat 86% bottom;
   min-height: 407px;
   margin-bottom: 60px;
 
-  @media screen and (max-width: 1250px) {
-    background-position: 100% top;
+  @media screen and (min-width: 1069px) and (max-width: 1250px) {
+    background-position: 100% bottom;
   }
 
-  @media screen and (max-width: 1068px) {
-    background-position: 110% top;
+  @media screen and (min-width: 991px) and (max-width: 1068px) {
+    background-position: 110% bottom;
   }
 
-  @media screen and (max-width: 990px) {
-    background-position: 120% top;
+  @media screen and (min-width: 769px) and (max-width: 990px) {
+    background-position: 120% bottom;
+  }
+
+  @media screen and (max-width: 768px) {
+    background-position: 230% bottom;
   }
 
 
