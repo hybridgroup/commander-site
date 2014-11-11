@@ -13,7 +13,10 @@ body {
 }
 
 .app-content {
-    margin-bottom: em(571);
+  margin-bottom: em(671);
+  @include media($mobile-large) {
+    margin-bottom: 0;
+  }
 }
 
 .main-content {

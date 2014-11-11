@@ -6,11 +6,26 @@
 
     h2 {
       color: $color-navy;
+      @include media($mobile-large) {
+        text-align: center;
+      }
     }
 
     .placeholder {
       background: $color-dark-green;
       @include span-columns(3 of 12);
+
+      @include media($mobile-large) {
+        @include span-columns(6 of 12);
+        margin-bottom: em(15);
+        &.second {
+          @include omega();
+        }
+      }
+
+      @include media($mobile) {
+        @include span-columns(12 of 12);
+      }
     }
   }
 
@@ -27,18 +42,43 @@
     .title {
       font-weight: bold;
       font-size: em(20);
+      @include media ($mobile) {
+        text-align: center;
+      }
     }
 
     .blog {
       @include span-columns(3 of 12);
+      @include media ($tablet) {
+        @include span-columns(6 of 12);
+      }
+
+      @include media ($mobile) {
+        @include span-columns(12 of 12);
+      }
     }
 
     .twitter {
       @include span-columns(3 of 12);
+      @include media ($tablet) {
+        @include span-columns(6 of 12);
+        @include omega();
+      }
+
+      @include media ($mobile) {
+        @include span-columns(12 of 12);
+      }
     }
 
     .contact {
       @include span-columns(3 of 12);
+      @include media ($tablet) {
+        @include span-columns(6 of 12);
+      }
+
+      @include media ($mobile) {
+        @include span-columns(12 of 12);
+      }
 
       a {
         color: #fff;
@@ -51,6 +91,14 @@
 
     .network {
       @include span-columns(3 of 12);
+      @include media ($tablet) {
+        @include span-columns(6 of 12);
+        @include omega();
+      }
+
+      @include media ($mobile) {
+        @include span-columns(12 of 12);
+      }
 
       .social  {
         text-align: center;

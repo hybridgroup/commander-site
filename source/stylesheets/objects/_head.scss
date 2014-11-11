@@ -1,5 +1,6 @@
 .app-header {
   background: $color-navy;
+  overflow: hidden;
 
   .logo {
     margin-top: 22px;
@@ -7,6 +8,11 @@
     background: url(../images/logo.png) no-repeat top left;
     width: em(245);
     height: em(39);
+
+    @include media ($mobile-large) {
+      margin: 5px auto;
+      display: block;
+    }
 
     span {
       display: none;

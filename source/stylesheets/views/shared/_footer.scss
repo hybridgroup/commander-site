@@ -4,6 +4,10 @@ footer {
   bottom: 0;
   width: 100%;
 
+  @include media($mobile-large) {
+    position: relative;
+  }
+
   .screenshots, .footer-links, .footer-base {
     width: 100%;
   }

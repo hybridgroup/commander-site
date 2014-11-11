@@ -1,4 +1,6 @@
 .home {
+  margin-top: em(60);
+
   h2 {
     color: $color-navy;
     font-family: $font-secondary;
@@ -14,11 +16,23 @@
 
   .home-about {
     @include span-columns(5 of 12);
+    @include media ($mobile-large) {
+      @include span-columns(12 of 12);
+    }
   }
 
   .home-features {
     @include span-columns(6 of 12);
     @include shift(1);
+    @include omega();
+    @include media ($mobile-large) {
+      @include span-columns(12 of 12);
+      @include shift(0);
+    }
+
+    @include media ($mobile) {
+      text-align: center;
+    }
 
     .icon-feature {
       width: 90px;
@@ -26,6 +40,12 @@
       display: inline-block;
       float: left;
       margin-right: em(20);
+
+      @include media ($mobile) {
+        float: none;
+        margin-right: 0;
+        margin-bottom: em(20);
+      }
     }
   }
 
