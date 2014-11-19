@@ -12,34 +12,37 @@ hero_title: "control robots from your mobile device"
 
 .container
   .home-about
-    %h2 About Commander
+    %h2 Commander
 
     %p.subtitle
-      Lorem ipsum dolor sit amet, consectetur Phasellus id commodo felis, Ipsum dolor sit
+      A mobile app to control robots and connected devices.
 
     %p
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in commodo lectus. Vivamus
-      placerat massa vel vehicula cursus. Suspendisse adipiscing adipiscing quam et pellentesque. Nulla mollis odio arcu,
-      eget sagittis nunc imperdiet ut. 
+      The Commander mobile application can communicate with any device using the Common Protocol for Programming Physical I/O.
 
-    %p 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ex earum culpa nemo aliquam debitis fugiat nisi, 
-      ipsa eveniet enim, aperiam cumque quis officia. Ullam molestiae recusandae soluta facilis inventore!
+      Cylon, Gobot and Artoo are frameworks that implement an API compatible with this protocol.
+
+      Commander can be used to send commands to your robots or listen for events coming from them.
+
+      You can load a "command set" that is a list of the preconfigured commands and you can choose between different types of layouts.
+
+      For documentation view the
+      = link_to "readme on Github.", "https://github.com/hybridgroup/commander#using-commander"
 
   .home-features
     %h2 Features
 
     .feature
       .icon-feature.feature-01
-      %h4 Lorem Ipsum
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in.
+      %h4 List
+      %p Once selected, just tap on any of the commands on the list. This will execute the command on the robot api.
 
     .feature
       .icon-feature.feature-02
-      %h4 Lorem Ipsum
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in.
+      %h4 D-Pad
+      %p Once selected, just tap on any of the buttons, up, down, left or right. This will execute the command on the robot api.
 
     .feature
       .icon-feature.feature-03
-      %h4 Lorem Ipsum
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in.
+      %h4 Create your Own Command Set
+      %p Command sets are a json object with a command_set root and the following attributes: name, type (list/d-pad), and commands.
