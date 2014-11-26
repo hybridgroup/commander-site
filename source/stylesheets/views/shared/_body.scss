@@ -12,8 +12,17 @@ body {
   color: $font-color;
 }
 
+a {
+  color: #0092D4;
+
+  &:hover {
+    color: #006390;
+  }
+}
+
 .app-content {
-  margin-bottom: em(671);
+  margin-bottom: em(785);
+
   @include media($mobile-large) {
     margin-bottom: 0;
   }

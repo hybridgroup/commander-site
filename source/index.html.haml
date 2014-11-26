@@ -1,12 +1,12 @@
 ---
 hero: true
 
-title: Commander - Control robots from your mobile device.
+title: Commander - A mobile app to control robots and connected devices.
 author: The Hybrid Group
 description: Commander is an app to control robots from your mobile device.
 layout: home
 
-hero_title: "control robots from your mobile device"
+hero_title: "A mobile app to control robots and connected devices."
 
 ---
 
@@ -14,32 +14,29 @@ hero_title: "control robots from your mobile device"
   .home-about
     %h2 About Commander
 
-    %p.subtitle
-      Lorem ipsum dolor sit amet, consectetur Phasellus id commodo felis, Ipsum dolor sit
+    :markdown
+      The Commander mobile application can communicate with any device using the [Common Protocol for Programming Physical I/O](http://cppp.io).
 
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in commodo lectus. Vivamus
-      placerat massa vel vehicula cursus. Suspendisse adipiscing adipiscing quam et pellentesque. Nulla mollis odio arcu,
-      eget sagittis nunc imperdiet ut. 
+      [Cylon](http://cylonjs.com), [Gobot](http://gobot.io) and [Artoo](https://artoo.io) are frameworks that implement an API compatible with this protocol.
 
-    %p 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ex earum culpa nemo aliquam debitis fugiat nisi, 
-      ipsa eveniet enim, aperiam cumque quis officia. Ullam molestiae recusandae soluta facilis inventore!
+      Commander can be used to send commands to your robots or listen for events coming from them.
+
+      You can load a **command set** that is a list of the preconfigured commands and you can choose between different types of layouts.
 
   .home-features
-    %h2 Features
+    %h2 Command Set Types
 
     .feature
       .icon-feature.feature-01
-      %h4 Lorem Ipsum
+      %h4 List
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in.
 
     .feature
       .icon-feature.feature-02
-      %h4 Lorem Ipsum
+      %h4 D-Pad
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in.
 
     .feature
       .icon-feature.feature-03
-      %h4 Lorem Ipsum
+      %h4 Joystick
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id commodo felis, in.

@@ -48,21 +48,9 @@
     }
 
     .blog {
-      @include span-columns(3 of 12);
+      @include span-columns(4 of 12);
       @include media ($tablet) {
         @include span-columns(6 of 12);
-      }
-
-      @include media ($mobile) {
-        @include span-columns(12 of 12);
-      }
-    }
-
-    .twitter {
-      @include span-columns(3 of 12);
-      @include media ($tablet) {
-        @include span-columns(6 of 12);
-        @include omega();
       }
 
       @include media ($mobile) {
@@ -71,8 +59,10 @@
     }
 
     .contact {
+      @include shift(2 of 12);
       @include span-columns(3 of 12);
       @include media ($tablet) {
+      @include shift(0 of 12);
         @include span-columns(6 of 12);
       }
 
@@ -101,15 +91,13 @@
       }
 
       .social  {
-        text-align: center;
+        text-align: left;
 
         a {
           display: inline-block;
         }
       }
     }
-
-
   }
 
   .footer-base {
@@ -121,5 +109,9 @@
     img {
       margin-top: em(29);
     }
+  }
+
+  .thg {
+    color: orange;
   }
 }
