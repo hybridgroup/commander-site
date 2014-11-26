@@ -58,30 +58,12 @@
       }
     }
 
-    .contact {
-      @include shift(2 of 12);
-      @include span-columns(3 of 12);
-      @include media ($tablet) {
-      @include shift(0 of 12);
-        @include span-columns(6 of 12);
-      }
-
-      @include media ($mobile) {
-        @include span-columns(12 of 12);
-      }
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
 
     .network {
       @include span-columns(3 of 12);
+      @include shift(5);
       @include media ($tablet) {
+        @include shift(0);
         @include span-columns(6 of 12);
         @include omega();
       }
