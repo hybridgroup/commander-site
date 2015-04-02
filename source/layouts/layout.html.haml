@@ -3,6 +3,7 @@
     = partial "/layouts/partials/head"
   %body
     = partial "/layouts/layout-contents"
+    = yield_content :github_ribbon
     %header.app-header{ :role => "banner", :id => "top" }
       .container
         = yield_content :logo
