@@ -34,9 +34,9 @@
     background: $color-dark-blue;
     overflow: hidden;
     color: #fff;
-    
+
     .container {
-      margin: em(67) auto;
+      margin: em(30) auto;
       font-size: em(12);
     }
 
@@ -85,6 +85,8 @@
 
   .footer-base {
     background: $color-navy;
+    color: $color-white;
+    font-size: em(10);
     min-height: em(114);
     text-align: center;
     overflow: hidden;
@@ -95,6 +97,6 @@
   }
 
   .thg {
-    color: orange;
+    color: $color-orange;
   }
 }
